@@ -41,18 +41,18 @@ import (
 )
 
 func main() {
-    // --> Write the content "Default" out to stdout without color
+    // Write the content "Default" out to stdout without color
     color.Color().Default("Default").Print() // Output: Default
 
-    // --> Write the content "Red", "Blue", "Green" out to stdout with color escapes
+    // Write the content "Red", "Blue", "Green" out to stdout with color escapes
     color.Color().Red("Red").Print() // Output: Red
     color.Color().Blue("Blue").Print() // Output: Blue
     color.Color().Green("Green").Print() // Output: Green
 
-    // --> Wrap color(s) with bold color escapes and write to stdout
+    // Wrap color(s) with bold color escapes and write to stdout
     color.Color().Bold(color.Color().Cyan("Cyan")).Print() // Output: Cyan
 
-    // --> Customize how newlines and spaces are added to the formatted output
+    // Customize how newlines and spaces are added to the formatted output
     color.Color().Red("Color-1").Print(func(o *color.Options) { o.Line = false; o.Space = true })
     color.Color().Red("Color-2").Print(func(o *color.Options) { o.Line = false; o.Space = true })
     color.Color().Red("Color-3").Print()
