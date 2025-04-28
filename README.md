@@ -73,3 +73,7 @@ func main() {
 ## Contributions
 
 See the [**Contributing Guide**](./CONTRIBUTING.md) for additional details on getting started.
+
+## Task-Board
+
+- [ ] Update documentation image to exclude `ethr`-related text.
